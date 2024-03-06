@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foodlist_nav"
+    app:startDestination="@id/foodListFragment">
+
+    <fragment
+        android:id="@+id/foodItemFragment"
+        android:name="com.example.food_app_v03.FoodItemFragment"
+        android:label="fragment_food_item"
+        tools:layout="@layout/fragment_food_item" >
+        <action
+            android:id="@+id/action_foodItemFragment_to_foodListFragment"
+            app:destination="@id/foodListFragment"
+            app:popUpTo="@id/foodListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="food"
+            app:argType="com.example.food_app_v03.Food" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="com.example.food_app_v03.FoodListFragment"
+        android:label="fragment_food_list"
+        tools:layout="@layout/fragment_food_list" >
+        <action
+            android:id="@+id/action_foodListFragment_to_foodItemFragment"
+            app:destination="@id/foodItemFragment" />
+    </fragment>
+</navigation>

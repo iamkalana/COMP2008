@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650249422492",
+    "project_id": "mad-assignment2partb",
+    "storage_bucket": "mad-assignment2partb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650249422492:android:0b61c5c396bcc035ae0f59",
+        "android_client_info": {
+          "package_name": "com.example.assignment2_partb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650249422492-2oebln7ihksrqgdas9ou8jd9j35rifpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGfLjvhPArGKZuZRNQVNSk3dAvZIIod84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650249422492-2oebln7ihksrqgdas9ou8jd9j35rifpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

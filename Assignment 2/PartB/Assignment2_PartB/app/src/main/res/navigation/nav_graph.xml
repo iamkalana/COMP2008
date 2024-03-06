@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageListFragment">
+
+    <fragment
+        android:id="@+id/imageListFragment"
+        android:name="com.example.assignment2_partb.ImageListFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_image_list" >
+        <action
+            android:id="@+id/action_imageListFragment_to_imageSaveFragment"
+            app:destination="@id/imageSaveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageSaveFragment"
+        android:name="com.example.assignment2_partb.ImageSaveFragment"
+        android:label="Upload"
+        tools:layout="@layout/fragment_image_save">
+        <argument
+            android:name="bitmap"
+            app:argType="android.graphics.Bitmap"/>
+    </fragment>
+</navigation>
